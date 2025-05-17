@@ -1,1 +1,35 @@
-project_files.md
+# Gold Trading Analysis App Files
+
+Below is a summary of all the files you need to upload to your GitHub repository for successful deployment:
+
+## Main App File (app.py)
+This is the main Streamlit application file that contains the interface and functionality for your Gold Trading Analysis app, including the chat assistant.
+
+## Utils Folder
+Contains all the utility modules that power your application:
+
+- `utils/__init__.py`: Makes the utils directory a Python package
+- `utils/analysis.py`: Contains functions for analyzing chart patterns
+- `utils/backtesting.py`: Contains backtesting functionality
+- `utils/data_fetcher.py`: Handles fetching gold price data
+- `utils/technical_indicators.py`: Calculates technical indicators
+- `utils/trading_signals.py`: Generates trading signals
+
+## Streamlit Configuration
+- `.streamlit/config.toml`: Contains server and theme configuration
+
+## Deployment Requirements
+- `requirements.txt`: Lists all the required Python packages
+```
+streamlit
+yfinance
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+plotly
+```
+
+## Upload all of these to your GitHub repository
+Make sure to maintain the folder structure when uploading files to GitHub. The app.py file should be in the root directory, with the utils folder and .streamlit folder as subdirectories.
